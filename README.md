@@ -103,7 +103,7 @@ These will be replaced in the final version.
 
 # Roadmap
 
-Upcoming Tasks
+##Upcoming Tasks
 
   Finalizing worker models and animations
 
@@ -113,7 +113,7 @@ Upcoming Tasks
 
   Final polishing of the main location
 
-Future Plans
+##Future Plans
 
   Adding new worker types
 
@@ -133,21 +133,27 @@ The project is actively evolving and receives regular updates.
 # Support My Projects
 
 If you want to support development:
+
 🌐 EVM (ETH / USDT / BNB / MATIC)
 
 0x7a6D3A943fb0b83aeF9adfA01899a175daecbBBF
+
 ⚡ Solana
 
 3CAUvQYbE4kKQvaVErHvxBMPCxvvRYsYt4FpvdUZsYTq
+
 🔵 TON
 
 UQDogqc3a9oA5nD5PUSBtkTqkOVMgHwLx5zGIYFQosZ68SBQ
+
 🔺 TRON (TRC20)
 
 TM8YHpAs9HUFF6MAPvukdUxqax233nRBQZ
+
 ⭐ Stellar (XLM)
 
 GAQJG6576Q6OR3HPB6JDFN4K7VF4QH5YBLM6MXKZEEWKLNO6LJ72BQAZ
+
 ₿ Bitcoin
 
 bc1qvu9vu6s9snfs5n7cytf2hqhkasg9qamwcyumpq
@@ -157,5 +163,7 @@ bc1qvu9vu6s9snfs5n7cytf2hqhkasg9qamwcyumpq
 # Developer
 
 teri-farti — The Water Tycoon  
+
 GitHub: https://github.com/teri-farti
+
 Website: https://teri-farti.github.io/tf_game_page/
