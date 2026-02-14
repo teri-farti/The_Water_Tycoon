@@ -1,0 +1,14 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "water_tycoon:worker_shop"
+        },
+"components": {
+    "minecraft:geometry": "minecraft:geometry.full_block",
+    "minecraft:collision_box": true,
+    "minecraft:selection_box": true
+}
+
+    }
+}

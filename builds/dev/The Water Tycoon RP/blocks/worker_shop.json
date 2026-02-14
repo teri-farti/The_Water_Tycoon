@@ -1,0 +1,17 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "water_tycoon:worker_shop"
+        },
+        "components": {
+            "minecraft:geometry": "geometry.worker_shop",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "worker_shop",
+                    "render_method": "opaque"
+                }
+            }
+        }
+    }
+}

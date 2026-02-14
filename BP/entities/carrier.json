@@ -1,0 +1,114 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "water_tycoon:carrier",
+            "is_spawnable": true,
+            "is_summonable": true
+        },
+        "component_groups": {
+            "wt:searching": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 1,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "raw_water"
+                            },
+                            "max_dist": 32
+                        }
+                    ],
+                    "must_see": false
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 2,
+                    "speed_multiplier": 1.2
+                }
+            },
+            "wt:delivering": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 1,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "filter_family"
+                            },
+                            "max_dist": 32
+                        }
+                    ],
+                    "must_see": false
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 2,
+                    "speed_multiplier": 1.2
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "carrier",
+                    "mob"
+                ]
+            },
+            "minecraft:health": {
+                "value": 9999,
+                "max": 9999
+            },
+            "minecraft:movement": {
+                "value": 0.25
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 5,
+                "speed_multiplier": 0.8
+            },
+            "minecraft:physics": {},
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:navigation.walk": {
+                "can_path_over_water": true,
+                "avoid_water": true
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "wt:searching"
+                    ]
+                }
+            },
+            "water_tycoon:collect_water": {
+                "remove": {
+                    "component_groups": [
+                        "wt:searching"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "wt:delivering"
+                    ]
+                }
+            },
+            "water_tycoon:drop_water": {
+                "remove": {
+                    "component_groups": [
+                        "wt:delivering"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "wt:searching"
+                    ]
+                }
+            }
+        }
+    }
+}

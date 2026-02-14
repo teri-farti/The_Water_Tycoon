@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "water_tycoon:carrier",
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 20
+			},
+			"minecraft:movement": {
+				"value": 0.15
+			},
+			"minecraft:physics": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 3,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.move_to_block": {
+				"priority": 1,
+				"speed_multiplier": 1,
+				"target_blocks": [
+					"water_tycoon:filter"
+				],
+				"search_range": 32
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 20
+			}
+		}
+	}
+}

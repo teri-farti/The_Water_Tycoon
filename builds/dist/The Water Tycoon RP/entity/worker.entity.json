@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "water_tycoon:worker",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/human2"
+			},
+			"geometry": {
+				"default": "geometry.human"
+			},
+			"animations": {
+				"stomp": "animation.worker.stomp",
+				"look_at_target": "animation.humanoid.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"stomp": "query.variant==1"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

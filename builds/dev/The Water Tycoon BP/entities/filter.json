@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "water_tycoon:filter",
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 9999
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 40
+			}
+		}
+	}
+}

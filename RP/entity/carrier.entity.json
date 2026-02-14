@@ -1,0 +1,32 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "water_tycoon:carrier",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/human"
+            },
+            "geometry": {
+                "default": "geometry.human"
+            },
+            "animations": {
+                "walk": "animation.humanoid.walk",
+                "look_at_target": "animation.humanoid.look_at_target"
+            },
+            "scripts": {
+                "animate": [
+                    "look_at_target",
+                    {
+                        "walk": "query.modified_move_speed > 0.1"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

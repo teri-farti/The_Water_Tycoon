@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "water_tycoon:raw_water",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "raw_water",
+          "mob"
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      }
+    }
+  }
+}

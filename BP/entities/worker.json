@@ -1,0 +1,61 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "water_tycoon:worker",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 9999
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 30
+      },
+      "minecraft:attack": {
+        "damage": 0
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "speed_multiplier": 1
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0,
+        "max": 1.0
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "component_groups": {
+      "stomp_active": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      }
+    },
+    "events": {
+      "water_tycoon:start_stomp": {
+        "add": {
+          "component_groups": [
+            "stomp_active"
+          ]
+        }
+      },
+      "water_tycoon:stop_stomp": {
+        "remove": {
+          "component_groups": [
+            "stomp_active"
+          ]
+        }
+      }
+    }
+  }
+}

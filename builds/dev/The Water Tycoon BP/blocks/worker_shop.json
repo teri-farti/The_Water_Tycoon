@@ -1,0 +1,16 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "water_tycoon:worker_shop"
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:interact": {
+				"on_interact": {
+					"event": "water_tycoon:buy_worker"
+				}
+			}
+		}
+	}
+}

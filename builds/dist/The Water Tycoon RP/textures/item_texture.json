@@ -1,0 +1,30 @@
+{
+	"resource_pack_name": "The Water Tycoon",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"buy_worker": {
+			"textures": "textures/items/buy_worker"
+		},
+		"buy_carrier": {
+			"textures": "textures/items/buy_carrier"
+		},
+		"buy_filter": {
+			"textures": "textures/items/buy_filter"
+		},
+		"upgrade_worker": {
+			"textures": "textures/items/upgrade_worker"
+		},
+		"upgrade_carrier": {
+			"textures": "textures/items/upgrade_carrier"
+		},
+		"upgrade_filter": {
+			"textures": "textures/items/upgrade_filter"
+		},
+		"raw_water": {
+			"textures": "textures/items/raw_water"
+		},
+		"clean_water": {
+			"textures": "textures/items/clean_water"
+		}
+	}
+}
