@@ -1,10 +1,14 @@
 # The Water Tycoon
 
 The Water Tycoon is a Bedrock tycoon‑style map focused on water extraction, filtration, and distribution in a drought‑affected region of Africa.
+
 The project is built as an engineering‑oriented experience with carefully designed systems, unique mechanics, and a strong social‑environmental theme.
 
 The map is developed for Minecraft Bedrock Edition and is intended for future publication on the Minecraft Marketplace.
-Vision
+
+---
+
+# Vision
 
 The goal of this project is to create a socially meaningful gameplay experience that combines:
 
@@ -19,7 +23,6 @@ The goal of this project is to create a socially meaningful gameplay experience 
 -Visual and technical quality matching Marketplace standards
 
 The project is developed as a portfolio map, showcasing skills in add‑on development, animation, system design, and game architecture.
-Core Features
 
 ---
 
@@ -97,6 +100,7 @@ Requirements
 The project uses original models, textures, and animations created specifically for this map.
 
 During early development, temporary placeholder assets may be used.
+
 These will be replaced in the final version.
 
 ---
@@ -125,7 +129,8 @@ These will be replaced in the final version.
 
 # Project Status
 
-Active development
+## Active development
+
 The project is actively evolving and receives regular updates.
 
 ---
