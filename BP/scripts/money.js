@@ -14,6 +14,6 @@ system.runInterval(() => {
     const globalMoney = typeof rawMoney === "number" ? rawMoney : 0;
 
     for (const player of world.getAllPlayers()) {
-        player.onScreenDisplay.setActionBar(`§eМонеты: §6${globalMoney}`);
+        player.onScreenDisplay.setActionBar(`§eMoney: §6${globalMoney}`);
     }
 }, 10);
