@@ -89,5 +89,5 @@ function sellWater(carrier) {
 
     const money = Number(world.getDynamicProperty("money") ?? 0);
     world.setDynamicProperty("money", money + totalReward);
-    player.onScreenDisplay.setActionBar(`§a+${totalReward} монет §7(Рабочий Ур.${workerLevel})`);
+    player.onScreenDisplay.setActionBar(`§a+${totalReward} money §7(Worker lvl.${workerLevel})`);
 }
